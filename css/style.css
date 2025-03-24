@@ -1,0 +1,364 @@
+/* 去掉所有标签的默认内外边距 */
+*{
+	/* 外边距为0 */
+	margin: 0;
+	/* 内边距为0 */
+	padding: 0;
+}
+/* 去除列表的默认样式 */
+li{
+	list-style: none;
+}
+/* 去掉超链接a标签的默认下划线 */
+a{
+	text-decoration: none;
+}
+/* 栏目一 */
+/* 头部导航栏 */
+/* 导航栏大盒子 */
+.header{
+	/* 长度设置为100% */
+	width: 100%;
+	/* 高度50px */
+	height: 50px;
+	/* 颜色设置为白色 */
+	background: #FFFFFF;
+	/* 加了一个灰色的阴影 */
+	box-shadow: 2px 3px 5px #ccc;
+}
+/* 导航栏内容区 */
+.headerf{
+	/* 长度设置为1200px */
+	width: 1200px;
+	/* 设置这个居中显示 */
+	margin: auto;
+}
+/* 左侧logo部分 */
+.hl{
+	/* 设置左浮动 靠左显示 */
+	float: left;
+}
+/* logo图片 */
+.hl img{
+	/* 设置左浮动 靠左显示 */
+	float: left;
+	/* 高度为40px */
+	height: 30px;
+	/* 设置5px的上边距 */
+	margin-top: 10px;
+}
+/* 导航栏 */
+.hl>ul{
+	/* 设置左浮动 靠左显示 */
+	float: left;
+	/* 设置80px的左边距 */
+	margin-left: 80px;
+}
+.hl>ul>li{
+	/* 相对定位 */
+	position: relative;
+	/* 设置左浮动 靠左显示 */
+	float: left;
+	/* 高度设置为50px */
+	height: 50px;
+	/* 行高设置为50px */
+	line-height: 50px;
+	/* 设置50px的左边距 */
+	margin-right: 50px;
+}
+.hl ul li a{
+	/* 设置为块级元素 */
+	display: block;
+	/* 高度设置为47px */
+	height: 47px;
+	/* 字体大小设置为15px */
+	font-size: 15px;
+	/* 字体颜色设置为黑色 */
+	color: #5a7436;
+	font-family: PingFang-Bold, sans-serif;
+}
+/* 设置class为.active 标签下的a 的样式 */
+.hl ul .active a{
+	/* 设置颜色 */
+	color: #ff0000;
+	/* 设置下边框为3px 颜色为#15c5ce 的实线 */
+	border-bottom: 3px solid #ff0000;
+}
+/* 鼠标移入效果 */
+.hl ul li a:hover{
+	/* 设置颜色 */
+	color: #ff0000;
+	/* 设置下边框为3px 颜色为#15c5ce 的实线 */
+	border-bottom: 3px solid #ff0000;
+}
+/* 右侧搜索栏 */
+.hr{
+	/* 右浮动 靠右对齐 */
+	float: right;
+}
+/* 搜索框 */
+.hr input{
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 长度设置为180px */
+	width: 180px;
+	/* 高度设置为30px */
+	height: 30px;
+	/* 左侧内边距设置为10px */
+	padding-left: 10px;
+	/* 边框圆角设置为20px */
+	border-radius: 20px;
+	/* 去除鼠标点击效果 */
+	outline: none;
+	/* 设置边框 */
+	border: 1px solid #CCCCCC;
+	/* 上侧边距为10px */
+	margin-top: 10px;
+	/* 字体设置为12px */
+	font-size: 12px;
+	/* 设置背景颜色 */
+	background: #F5F6F9;
+}
+.hr a{
+	/* 设置为块级元素 */
+	display: block;
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 设置20px的左侧外边距 */
+	margin-left: 20px;
+	/* 高度设置为50px */
+	height: 50px;
+	/* 行高设置为50px */
+	line-height: 50px;
+	/* 字体设置为14px */
+	font-size: 14px;
+	/* 设置颜色 */
+	color: #404040;
+}
+/* 大图 */
+.banner{
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距10px  左右居中 */
+	margin: 10px auto;
+}
+/* 图片 */
+.banner img{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 350px;
+	/* 图片超出大小自动延展 防止压缩 */
+	object-fit: cover;
+}
+/* 栏目标题 */
+.title {
+	position: relative;
+	/* 设置长度 */
+	width: 360px;
+	/* 上下外边距40 左右居中 */
+	margin: 40px auto 40px auto;
+	/* 上下左右内边距为80*/
+	padding: 0 80px;
+	/*设置样式*/
+	border-bottom: 2px solid #5a7436;
+}
+/* 栏目标题文字 */
+.title h3 {
+	position: absolute;
+	/* 设置字体大小 */
+	font-size: 24px;
+	/* 顶部 */
+	top: -15px;
+	/* 设置长度 */
+	width: 360px;
+	/* 文字居中 */
+	text-align: center;
+	/* 选中的背景 */
+	color: #5a7436;
+	background: #FFFFFF;
+	font-family: PingFang-Heavy, sans-serif;
+}
+
+/* 关于湖北介绍*/
+.about{
+	/* 弹性布局 */
+	display: flex;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 居中显示 */
+	margin: 0 auto;
+	
+	/* 阴影 */
+	box-shadow: 2px 1px 10px #CCCCCC;
+}
+.about img{
+	/* 设置长度 */
+	width: 550px;
+	/* 设置高度 */
+	height: 100%;
+	/* 防止图片压缩 */
+	object-fit: cover;
+}
+.about-text{
+	/* 设置长度 */
+	width: 590px;
+	/* 上下左右内边距为20 */
+	padding: 20px;
+	font-family: PingFang-Medium, sans-serif;
+}
+.about-text h4{
+	/* 设置字体 */
+	font-size: 24px;
+	/* 设置颜色 */
+	color: #333333;
+	/* 字体粗细 */
+	font-weight: normal;
+	/* 文字间距 */
+	letter-spacing: 2px;
+	/* 下外边距为15px */
+	margin-bottom: 15px;
+}
+.about-text p{
+	/* 设置行高 */
+	line-height: 1.8;
+}
+/* 湖北景点 */
+.text{
+	/* 弹性布局 */
+	display: flex;
+	/* 换行处理 */
+	flex-wrap: wrap;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距50 左右居中 */
+	margin: 0px auto;
+}
+/* 湖北景点 */
+.text .text-list{
+	/* 弹性布局 */
+	display: flex;
+	/* 换行处理 */
+	flex-wrap: wrap;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 100%;
+	/* 背景颜色 */
+	background-color: #FFFFFF;
+	/* 下外边距20 */
+	margin-bottom: 20px;
+	/* 设置阴影 */
+	box-shadow: 2px 1px 10px #CCC;
+}
+.text .text-list .list-img{
+	/* 设置长度 */
+	width: 30%;
+}
+.text .text-list .list-img img{
+	/* 设置为块级元素 */
+	display: block;
+	/* 设置长度 */
+	width: 100%;
+	/* 设置行高 */
+	height: 220px;
+	/* 防止图片变形 */
+	object-fit: fill;
+}
+.text .text-list .list-text{
+	/* 设置长度 */
+	width: 68%;
+}
+.text .text-list .list-text h3{
+	/* 上外边距20 右外边距10 下外边距20 左外边距0 */
+	margin: 20px 10px 20px 0;
+	font-family: PingFang-Bold, sans-serif;
+}
+.text .text-list .list-text p{
+	/* 设置行高 */
+	line-height: 1.8;
+	/* 设置字体大小 */
+	font-size: 15px;
+	/* 右侧外边距为20 */
+	margin-right: 20px;
+	/* 设置字体颜色 */
+	color: #777777;
+	font-family: PingFang-Medium, sans-serif;
+}
+/* 湖北美食列表 */
+.food{
+	/* 弹性布局 */
+	display: flex;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距50 左右居中 */
+	margin: 50px auto;
+}
+/* 湖北美食 */
+.food-list{
+	/* 弹性布局 */
+	display: flex;
+	/* 换行处理 */
+	flex-wrap: wrap;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 30%;
+	/* 上下左右内边距为 10 */
+	padding: 10px;
+	/* 盒子阴影 */
+	box-shadow: 2px 1px 10px #CCC;
+}
+.food .food-list .list-img{
+	/* 设置长度 */
+	width: 100%;
+}
+.food .food-list .list-img img{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置行高 */
+	/* height: 220px; */
+	/* 防止图片变形 */
+	object-fit: cover;
+}
+.food .food-list .list-food{
+	/* 设置长度 */
+	width: 100%;
+}
+.food .food-list .list-food h3{
+	/* 上下外边距为5 左右为0 */
+	margin: 5px 0;
+	/* 设置字体颜色 */
+	color: #333;
+	font-family: PingFang-Bold, sans-serif;
+}
+.food .food-list .list-food p{
+	/* 设置行高 */
+	line-height: 1.6;
+	/* 设置字体大小 */
+	font-size: 15px;
+	/* 设置字体颜色 */
+	color: #777777;
+	font-family: PingFang-Medium, sans-serif;
+}
+/* 底部 */
+.footer{
+	/* 设置长度 */
+	width: 100%;
+	/* 上下内边距10 左右0 */
+	padding: 10px 0;
+	/* 字体颜色 */
+	color: #FFF;
+	/* 背景颜色 */
+	background: #333;
+	/* 文字居中 */
+	text-align: center;
+	/* 字体大小 */
+	font-size: 14px;
+}
